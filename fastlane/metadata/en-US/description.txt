@@ -1,1 +1,1 @@
-
+App shows actual weather information from Estonian Environment Agency

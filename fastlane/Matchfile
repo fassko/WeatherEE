@@ -1,0 +1,7 @@
+git_url("https://fassko@bitbucket.org/fassko/certificates")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+
+app_identifier ["com.fassko.WeatherEE", "com.fassko.WeatherEE"]
+username "fassko@gmail.com"

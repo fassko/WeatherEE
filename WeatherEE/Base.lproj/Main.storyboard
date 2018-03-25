@@ -29,7 +29,7 @@
         <!--Observations-->
         <scene sceneID="VKG-cC-hwo">
             <objects>
-                <viewController id="meb-SF-Lyv" customClass="ViewController" customModule="WeatherEE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="meb-SF-Lyv" customClass="MapViewController" customModule="WeatherEE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hPa-gU-mNy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

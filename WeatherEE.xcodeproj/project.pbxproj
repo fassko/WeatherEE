@@ -12,19 +12,20 @@
 		633168D22066CFDB004A622E /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D12066CFDB004A622E /* StationAnnotation.swift */; };
 		633168D42066D2D8004A622E /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D32066D2D7004A622E /* StationViewController.swift */; };
 		633168D62066DB45004A622E /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D52066DB45004A622E /* Parameter.swift */; };
+		633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168E82067EB45004A622E /* XCTest+Extensions.swift */; };
 		63392E592066BD530000E1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E582066BD530000E1E0 /* AppDelegate.swift */; };
-		63392E5B2066BD530000E1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E5A2066BD530000E1E0 /* ViewController.swift */; };
+		63392E5B2066BD530000E1E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E5A2066BD530000E1E0 /* MapViewController.swift */; };
 		63392E5E2066BD530000E1E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63392E5C2066BD530000E1E0 /* Main.storyboard */; };
 		63392E602066BD530000E1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63392E5F2066BD530000E1E0 /* Assets.xcassets */; };
 		63392E632066BD530000E1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63392E612066BD530000E1E0 /* LaunchScreen.storyboard */; };
 		63392E6B2066BF5A0000E1E0 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6A2066BF5A0000E1E0 /* Station.swift */; };
 		63392E6D2066C13F0000E1E0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6C2066C13F0000E1E0 /* WeatherService.swift */; };
-		63392E752066C2AA0000E1E0 /* WeatherEETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E742066C2AA0000E1E0 /* WeatherEETests.swift */; };
-		63392E7C2066C2F00000E1E0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6C2066C13F0000E1E0 /* WeatherService.swift */; };
+		63958BBA20680EF70005266E /* WeatherEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB920680EF70005266E /* WeatherEEUITests.swift */; };
+		63958BBB20680F090005266E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB72068028A0005266E /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		63392E772066C2AA0000E1E0 /* PBXContainerItemProxy */ = {
+		633168E02067EAEA004A622E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63392E4D2066BD520000E1E0 /* Project object */;
 			proxyType = 1;
@@ -39,35 +40,37 @@
 		633168D12066CFDB004A622E /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
 		633168D32066D2D7004A622E /* StationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		633168D52066DB45004A622E /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherEEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633168DF2067EAEA004A622E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633168E82067EB45004A622E /* XCTest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Extensions.swift"; sourceTree = "<group>"; };
 		63392E552066BD530000E1E0 /* WeatherEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63392E582066BD530000E1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63392E5A2066BD530000E1E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63392E5A2066BD530000E1E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		63392E5D2066BD530000E1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63392E5F2066BD530000E1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63392E622066BD530000E1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63392E642066BD530000E1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63392E6A2066BF5A0000E1E0 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		63392E6C2066C13F0000E1E0 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
-		63392E722066C2AA0000E1E0 /* WeatherEETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherEETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63392E742066C2AA0000E1E0 /* WeatherEETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEETests.swift; sourceTree = "<group>"; };
-		63392E762066C2AA0000E1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63958BB72068028A0005266E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		63958BB920680EF70005266E /* WeatherEEUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEEUITests.swift; sourceTree = "<group>"; };
 		682C4C04A095D0F0AACDBDFC /* Pods-WeatherEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherEE/Pods-WeatherEE.release.xcconfig"; sourceTree = "<group>"; };
 		D41EEF18EFF39B991898F48F /* Pods_WeatherEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		633168D82067EAEA004A622E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63392E522066BD530000E1E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				261B5C47668CA9FFC0A714C5 /* Pods_WeatherEE.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63392E6F2066C2AA0000E1E0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,11 +85,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		633168DC2067EAEA004A622E /* WeatherEEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63958BB920680EF70005266E /* WeatherEEUITests.swift */,
+				63958BB72068028A0005266E /* SnapshotHelper.swift */,
+				633168E82067EB45004A622E /* XCTest+Extensions.swift */,
+				633168DF2067EAEA004A622E /* Info.plist */,
+			);
+			path = WeatherEEUITests;
+			sourceTree = "<group>";
+		};
 		63392E4C2066BD520000E1E0 = {
 			isa = PBXGroup;
 			children = (
 				63392E572066BD530000E1E0 /* WeatherEE */,
-				63392E732066C2AA0000E1E0 /* WeatherEETests */,
+				633168DC2067EAEA004A622E /* WeatherEEUITests */,
 				63392E562066BD530000E1E0 /* Products */,
 				B1FF7DD2E9C98D0F9BCB26DB /* Pods */,
 				568336762FFF3EEB0EEE6635 /* Frameworks */,
@@ -97,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				63392E552066BD530000E1E0 /* WeatherEE.app */,
-				63392E722066C2AA0000E1E0 /* WeatherEETests.xctest */,
+				633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				63392E582066BD530000E1E0 /* AppDelegate.swift */,
-				63392E5A2066BD530000E1E0 /* ViewController.swift */,
+				63392E5A2066BD530000E1E0 /* MapViewController.swift */,
 				63392E6A2066BF5A0000E1E0 /* Station.swift */,
 				633168D52066DB45004A622E /* Parameter.swift */,
 				63392E6C2066C13F0000E1E0 /* WeatherService.swift */,
@@ -121,15 +135,6 @@
 			path = WeatherEE;
 			sourceTree = "<group>";
 		};
-		63392E732066C2AA0000E1E0 /* WeatherEETests */ = {
-			isa = PBXGroup;
-			children = (
-				63392E742066C2AA0000E1E0 /* WeatherEETests.swift */,
-				63392E762066C2AA0000E1E0 /* Info.plist */,
-			);
-			path = WeatherEETests;
-			sourceTree = "<group>";
-		};
 		B1FF7DD2E9C98D0F9BCB26DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +147,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		633168DA2067EAEA004A622E /* WeatherEEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633168E22067EAEA004A622E /* Build configuration list for PBXNativeTarget "WeatherEEUITests" */;
+			buildPhases = (
+				633168D72067EAEA004A622E /* Sources */,
+				633168D82067EAEA004A622E /* Frameworks */,
+				633168D92067EAEA004A622E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633168E12067EAEA004A622E /* PBXTargetDependency */,
+			);
+			name = WeatherEEUITests;
+			productName = WeatherEEUITests;
+			productReference = 633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		63392E542066BD530000E1E0 /* WeatherEE */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63392E672066BD530000E1E0 /* Build configuration list for PBXNativeTarget "WeatherEE" */;
@@ -152,6 +175,8 @@
 				63392E532066BD530000E1E0 /* Resources */,
 				B526D34166275A0E276BA1C6 /* [CP] Embed Pods Frameworks */,
 				7BF65282812C810D72F0A1C1 /* [CP] Copy Pods Resources */,
+				633168EA2067FFDD004A622E /* Swiftlint */,
+				63958BB4206800630005266E /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -161,24 +186,6 @@
 			productName = WeatherEE;
 			productReference = 63392E552066BD530000E1E0 /* WeatherEE.app */;
 			productType = "com.apple.product-type.application";
-		};
-		63392E712066C2AA0000E1E0 /* WeatherEETests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63392E792066C2AA0000E1E0 /* Build configuration list for PBXNativeTarget "WeatherEETests" */;
-			buildPhases = (
-				63392E6E2066C2AA0000E1E0 /* Sources */,
-				63392E6F2066C2AA0000E1E0 /* Frameworks */,
-				63392E702066C2AA0000E1E0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				63392E782066C2AA0000E1E0 /* PBXTargetDependency */,
-			);
-			name = WeatherEETests;
-			productName = WeatherEETests;
-			productReference = 63392E722066C2AA0000E1E0 /* WeatherEETests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -190,14 +197,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = fassko;
 				TargetAttributes = {
+					633168DA2067EAEA004A622E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = 63392E542066BD530000E1E0;
+					};
 					63392E542066BD530000E1E0 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					63392E712066C2AA0000E1E0 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 63392E542066BD530000E1E0;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -215,12 +222,19 @@
 			projectRoot = "";
 			targets = (
 				63392E542066BD530000E1E0 /* WeatherEE */,
-				63392E712066C2AA0000E1E0 /* WeatherEETests */,
+				633168DA2067EAEA004A622E /* WeatherEEUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		633168D92067EAEA004A622E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63392E532066BD530000E1E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,13 +242,6 @@
 				63392E632066BD530000E1E0 /* LaunchScreen.storyboard in Resources */,
 				63392E602066BD530000E1E0 /* Assets.xcassets in Resources */,
 				63392E5E2066BD530000E1E0 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63392E702066C2AA0000E1E0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,34 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		633168EA2067FFDD004A622E /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		63958BB4206800630005266E /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 34be06edc6f733a743335744b07a23f6a3e5b344 a9207ff06b3417aa4bf8c6408432761ca87c5b52dca8f2365b133eea61d407cc";
 		};
 		7BF65282812C810D72F0A1C1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -295,6 +330,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		633168D72067EAEA004A622E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63958BBA20680EF70005266E /* WeatherEEUITests.swift in Sources */,
+				633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */,
+				63958BBB20680F090005266E /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63392E512066BD530000E1E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,29 +348,20 @@
 				633168D22066CFDB004A622E /* StationAnnotation.swift in Sources */,
 				633168D02066CEBC004A622E /* Result.swift in Sources */,
 				633168D62066DB45004A622E /* Parameter.swift in Sources */,
-				63392E5B2066BD530000E1E0 /* ViewController.swift in Sources */,
+				63392E5B2066BD530000E1E0 /* MapViewController.swift in Sources */,
 				633168D42066D2D8004A622E /* StationViewController.swift in Sources */,
 				63392E6B2066BF5A0000E1E0 /* Station.swift in Sources */,
 				63392E592066BD530000E1E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63392E6E2066C2AA0000E1E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63392E7C2066C2F00000E1E0 /* WeatherService.swift in Sources */,
-				63392E752066C2AA0000E1E0 /* WeatherEETests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		63392E782066C2AA0000E1E0 /* PBXTargetDependency */ = {
+		633168E12067EAEA004A622E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63392E542066BD530000E1E0 /* WeatherEE */;
-			targetProxy = 63392E772066C2AA0000E1E0 /* PBXContainerItemProxy */;
+			targetProxy = 633168E02067EAEA004A622E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -349,6 +385,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		633168E32067EAEA004A622E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = WeatherEEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherEE;
+			};
+			name = Debug;
+		};
+		633168E42067EAEA004A622E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = WeatherEEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherEE;
+			};
+			name = Release;
+		};
 		63392E652066BD530000E1E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,9 +448,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -435,9 +507,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -461,14 +535,21 @@
 			baseConfigurationReference = 23B95A18EBD27BFF266BB6ED /* Pods-WeatherEE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.180325.2056;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f978b44e-a28d-4a4c-a2d6-02e10b0a6015";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.fassko.WeatherEE";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -477,52 +558,36 @@
 			baseConfigurationReference = 682C4C04A095D0F0AACDBDFC /* Pods-WeatherEE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.180325.2056;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f887777d-572f-4a3a-b1cd-dba5a66d6fd2";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.fassko.WeatherEE";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		63392E7A2066C2AA0000E1E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				INFOPLIST_FILE = WeatherEETests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEETests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherEE.app/WeatherEE";
-			};
-			name = Debug;
-		};
-		63392E7B2066C2AA0000E1E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3SGNZQGS68;
-				INFOPLIST_FILE = WeatherEETests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEETests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherEE.app/WeatherEE";
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		633168E22067EAEA004A622E /* Build configuration list for PBXNativeTarget "WeatherEEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633168E32067EAEA004A622E /* Debug */,
+				633168E42067EAEA004A622E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63392E502066BD520000E1E0 /* Build configuration list for PBXProject "WeatherEE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -537,15 +602,6 @@
 			buildConfigurations = (
 				63392E682066BD530000E1E0 /* Debug */,
 				63392E692066BD530000E1E0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63392E792066C2AA0000E1E0 /* Build configuration list for PBXNativeTarget "WeatherEETests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63392E7A2066C2AA0000E1E0 /* Debug */,
-				63392E7B2066C2AA0000E1E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
