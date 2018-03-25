@@ -16,16 +16,61 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios release
+### ios certificates
 ```
-fastlane ios release
+fastlane ios certificates
 ```
-Push a new release build to the App Store
+Certs
 ### ios generate_icon
 ```
 fastlane ios generate_icon
 ```
 
+### ios ci_build
+```
+fastlane ios ci_build
+```
+CI build
+### ios test
+```
+fastlane ios test
+```
+UI tests
+### ios circleci
+```
+fastlane ios circleci
+```
+Circle CI lane
+### ios travis
+```
+fastlane ios travis
+```
+Travis lane
+### ios build
+```
+fastlane ios build
+```
+
+### ios beta
+```
+fastlane ios beta
+```
+
+### ios release
+```
+fastlane ios release
+```
+
+### ios release_github
+```
+fastlane ios release_github
+```
+Deploy a new version to the App Store
+### ios dsyms
+```
+fastlane ios dsyms
+```
+Download dSYMs and upload to Testflight
 
 ----
 
