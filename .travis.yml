@@ -1,0 +1,20 @@
+before_install:
+  - sudo systemsetup -settimezone Europe/Tallinn
+  - gem update fastlane --no-document
+  - fastlane --version
+  - gem update xcodeproj --no-document
+  - gem install cocoapods
+  - gem cleanup
+  - gem list
+  - instruments -s devices
+  - xcodebuild -showsdks
+  - pod cache clean --all
+  - pod install --repo-update
+language: objective-c
+osx_image: xcode9.2
+script:
+  - fastlane travis
+env:
+  - FASTLANE_XCODE_LIST_TIMEOUT=120
+notifications:
+  email: false
