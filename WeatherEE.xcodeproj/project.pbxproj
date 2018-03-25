@@ -21,7 +21,6 @@
 		63392E6B2066BF5A0000E1E0 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6A2066BF5A0000E1E0 /* Station.swift */; };
 		63392E6D2066C13F0000E1E0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6C2066C13F0000E1E0 /* WeatherService.swift */; };
 		63958BB62068027B0005266E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB52068027B0005266E /* SnapshotHelper.swift */; };
-		63958BB82068028A0005266E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB72068028A0005266E /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,7 +335,6 @@
 			files = (
 				633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */,
 				63958BB62068027B0005266E /* SnapshotHelper.swift in Sources */,
-				63958BB82068028A0005266E /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
