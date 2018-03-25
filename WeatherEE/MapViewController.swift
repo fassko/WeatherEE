@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
   
   @IBOutlet weak var mapView: MKMapView!
 
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
   }
 }
 
-extension ViewController: MKMapViewDelegate {
+extension MapViewController: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
     let identifier = "marker"
     var view: MKMarkerAnnotationView
