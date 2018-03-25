@@ -83,6 +83,8 @@ extension ViewController: MKMapViewDelegate {
       view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
     }
     
+    
+    view.markerTintColor = #colorLiteral(red: 0.2235294118, green: 0.3098039216, blue: 0.5294117647, alpha: 1)
     view.displayPriority = .required
     
     return view

@@ -12,6 +12,9 @@
 		633168D22066CFDB004A622E /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D12066CFDB004A622E /* StationAnnotation.swift */; };
 		633168D42066D2D8004A622E /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D32066D2D7004A622E /* StationViewController.swift */; };
 		633168D62066DB45004A622E /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D52066DB45004A622E /* Parameter.swift */; };
+		633168DE2067EAEA004A622E /* WeatherEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168DD2067EAEA004A622E /* WeatherEEUITests.swift */; };
+		633168E72067EB2D004A622E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168E52067EB20004A622E /* SnapshotHelper.swift */; };
+		633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168E82067EB45004A622E /* XCTest+Extensions.swift */; };
 		63392E592066BD530000E1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E582066BD530000E1E0 /* AppDelegate.swift */; };
 		63392E5B2066BD530000E1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E5A2066BD530000E1E0 /* ViewController.swift */; };
 		63392E5E2066BD530000E1E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63392E5C2066BD530000E1E0 /* Main.storyboard */; };
@@ -24,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		633168E02067EAEA004A622E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63392E4D2066BD520000E1E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63392E542066BD530000E1E0;
+			remoteInfo = WeatherEE;
+		};
 		63392E772066C2AA0000E1E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63392E4D2066BD520000E1E0 /* Project object */;
@@ -39,6 +49,11 @@
 		633168D12066CFDB004A622E /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
 		633168D32066D2D7004A622E /* StationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		633168D52066DB45004A622E /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherEEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633168DD2067EAEA004A622E /* WeatherEEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEEUITests.swift; sourceTree = "<group>"; };
+		633168DF2067EAEA004A622E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633168E52067EB20004A622E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = WeatherEEUITests/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		633168E82067EB45004A622E /* XCTest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Extensions.swift"; sourceTree = "<group>"; };
 		63392E552066BD530000E1E0 /* WeatherEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63392E582066BD530000E1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63392E5A2066BD530000E1E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +71,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		633168D82067EAEA004A622E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63392E522066BD530000E1E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,11 +104,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		633168DC2067EAEA004A622E /* WeatherEEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				633168E82067EB45004A622E /* XCTest+Extensions.swift */,
+				633168E52067EB20004A622E /* SnapshotHelper.swift */,
+				633168DD2067EAEA004A622E /* WeatherEEUITests.swift */,
+				633168DF2067EAEA004A622E /* Info.plist */,
+			);
+			path = WeatherEEUITests;
+			sourceTree = "<group>";
+		};
 		63392E4C2066BD520000E1E0 = {
 			isa = PBXGroup;
 			children = (
 				63392E572066BD530000E1E0 /* WeatherEE */,
 				63392E732066C2AA0000E1E0 /* WeatherEETests */,
+				633168DC2067EAEA004A622E /* WeatherEEUITests */,
 				63392E562066BD530000E1E0 /* Products */,
 				B1FF7DD2E9C98D0F9BCB26DB /* Pods */,
 				568336762FFF3EEB0EEE6635 /* Frameworks */,
@@ -98,6 +132,7 @@
 			children = (
 				63392E552066BD530000E1E0 /* WeatherEE.app */,
 				63392E722066C2AA0000E1E0 /* WeatherEETests.xctest */,
+				633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +177,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		633168DA2067EAEA004A622E /* WeatherEEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633168E22067EAEA004A622E /* Build configuration list for PBXNativeTarget "WeatherEEUITests" */;
+			buildPhases = (
+				633168D72067EAEA004A622E /* Sources */,
+				633168D82067EAEA004A622E /* Frameworks */,
+				633168D92067EAEA004A622E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633168E12067EAEA004A622E /* PBXTargetDependency */,
+			);
+			name = WeatherEEUITests;
+			productName = WeatherEEUITests;
+			productReference = 633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		63392E542066BD530000E1E0 /* WeatherEE */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63392E672066BD530000E1E0 /* Build configuration list for PBXNativeTarget "WeatherEE" */;
@@ -190,6 +243,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = fassko;
 				TargetAttributes = {
+					633168DA2067EAEA004A622E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = 63392E542066BD530000E1E0;
+					};
 					63392E542066BD530000E1E0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -216,11 +274,19 @@
 			targets = (
 				63392E542066BD530000E1E0 /* WeatherEE */,
 				63392E712066C2AA0000E1E0 /* WeatherEETests */,
+				633168DA2067EAEA004A622E /* WeatherEEUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		633168D92067EAEA004A622E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63392E532066BD530000E1E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +361,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		633168D72067EAEA004A622E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633168DE2067EAEA004A622E /* WeatherEEUITests.swift in Sources */,
+				633168E72067EB2D004A622E /* SnapshotHelper.swift in Sources */,
+				633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63392E512066BD530000E1E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +398,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		633168E12067EAEA004A622E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63392E542066BD530000E1E0 /* WeatherEE */;
+			targetProxy = 633168E02067EAEA004A622E /* PBXContainerItemProxy */;
+		};
 		63392E782066C2AA0000E1E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63392E542066BD530000E1E0 /* WeatherEE */;
@@ -349,6 +430,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		633168E32067EAEA004A622E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WeatherEEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherEE;
+			};
+			name = Debug;
+		};
+		633168E42067EAEA004A622E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WeatherEEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeatherEE;
+			};
+			name = Release;
+		};
 		63392E652066BD530000E1E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,6 +638,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		633168E22067EAEA004A622E /* Build configuration list for PBXNativeTarget "WeatherEEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633168E32067EAEA004A622E /* Debug */,
+				633168E42067EAEA004A622E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63392E502066BD520000E1E0 /* Build configuration list for PBXProject "WeatherEE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

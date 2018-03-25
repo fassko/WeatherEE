@@ -1,0 +1,16 @@
+devices([
+  "iPhone SE",
+  "iPhone 8",
+  "iPhone 8 Plus",
+  "iPhone X"
+])
+
+languages([
+  "en-US"
+])
+
+scheme("MeteoEE")
+
+clear_previous_screenshots(true)
+
+workspace "./MeteoEE.xcworkspace"
