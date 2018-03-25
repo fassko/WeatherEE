@@ -12,8 +12,6 @@
 		633168D22066CFDB004A622E /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D12066CFDB004A622E /* StationAnnotation.swift */; };
 		633168D42066D2D8004A622E /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D32066D2D7004A622E /* StationViewController.swift */; };
 		633168D62066DB45004A622E /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D52066DB45004A622E /* Parameter.swift */; };
-		633168DE2067EAEA004A622E /* WeatherEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168DD2067EAEA004A622E /* WeatherEEUITests.swift */; };
-		633168E72067EB2D004A622E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168E52067EB20004A622E /* SnapshotHelper.swift */; };
 		633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168E82067EB45004A622E /* XCTest+Extensions.swift */; };
 		63392E592066BD530000E1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E582066BD530000E1E0 /* AppDelegate.swift */; };
 		63392E5B2066BD530000E1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E5A2066BD530000E1E0 /* ViewController.swift */; };
@@ -24,6 +22,8 @@
 		63392E6D2066C13F0000E1E0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6C2066C13F0000E1E0 /* WeatherService.swift */; };
 		63392E752066C2AA0000E1E0 /* WeatherEETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E742066C2AA0000E1E0 /* WeatherEETests.swift */; };
 		63392E7C2066C2F00000E1E0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6C2066C13F0000E1E0 /* WeatherService.swift */; };
+		63958BB62068027B0005266E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB52068027B0005266E /* SnapshotHelper.swift */; };
+		63958BB82068028A0005266E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB72068028A0005266E /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,7 @@
 		633168D32066D2D7004A622E /* StationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		633168D52066DB45004A622E /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		633168DB2067EAEA004A622E /* WeatherEEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherEEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		633168DD2067EAEA004A622E /* WeatherEEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEEUITests.swift; sourceTree = "<group>"; };
 		633168DF2067EAEA004A622E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		633168E52067EB20004A622E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = WeatherEEUITests/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		633168E82067EB45004A622E /* XCTest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+Extensions.swift"; sourceTree = "<group>"; };
 		63392E552066BD530000E1E0 /* WeatherEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63392E582066BD530000E1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +64,8 @@
 		63392E722066C2AA0000E1E0 /* WeatherEETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherEETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63392E742066C2AA0000E1E0 /* WeatherEETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEETests.swift; sourceTree = "<group>"; };
 		63392E762066C2AA0000E1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63958BB52068027B0005266E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		63958BB72068028A0005266E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		682C4C04A095D0F0AACDBDFC /* Pods-WeatherEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherEE/Pods-WeatherEE.release.xcconfig"; sourceTree = "<group>"; };
 		D41EEF18EFF39B991898F48F /* Pods_WeatherEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,9 +107,9 @@
 		633168DC2067EAEA004A622E /* WeatherEEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				63958BB52068027B0005266E /* SnapshotHelper.swift */,
+				63958BB72068028A0005266E /* SnapshotHelper.swift */,
 				633168E82067EB45004A622E /* XCTest+Extensions.swift */,
-				633168E52067EB20004A622E /* SnapshotHelper.swift */,
-				633168DD2067EAEA004A622E /* WeatherEEUITests.swift */,
 				633168DF2067EAEA004A622E /* Info.plist */,
 			);
 			path = WeatherEEUITests;
@@ -395,9 +395,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633168DE2067EAEA004A622E /* WeatherEEUITests.swift in Sources */,
-				633168E72067EB2D004A622E /* SnapshotHelper.swift in Sources */,
 				633168E92067EB46004A622E /* XCTest+Extensions.swift in Sources */,
+				63958BB62068027B0005266E /* SnapshotHelper.swift in Sources */,
+				63958BB82068028A0005266E /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
