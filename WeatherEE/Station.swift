@@ -57,7 +57,7 @@ struct Station {
     
     if 348.75 <= degrees, degrees <= 360 {
       windDirection = "N"
-    } else if 0 <= degrees,degrees <= 11.25 {
+    } else if 0 <= degrees, degrees <= 11.25 {
       windDirection = "N"
     } else if 11.25 < degrees, degrees <= 33.75 {
       windDirection = "NNE"
