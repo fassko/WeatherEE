@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 import SWXMLHash
 
 struct Station {
@@ -39,7 +40,7 @@ struct Station {
       Parameter(name: "Relative humidity", value: relativehumidity)
     ]
     
-    return parameters.flatMap({
+    return parameters.compactMap({
       guard let value = $0.value, !value.isEmpty else {
         return nil
       }
@@ -48,6 +49,7 @@ struct Station {
     }).map({ return $0 })
   }
   
+  // swiftlint:disable cyclomatic_complexity
   private func windDirectionFromDegrees(_ degrees: String?) -> String? {
     guard let stringDegrees = degrees, let degrees = Double(stringDegrees) else {
       return nil

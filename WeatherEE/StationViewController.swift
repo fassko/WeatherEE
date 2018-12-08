@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StationViewController: UITableViewController {
+class StationViewController: UITableViewController, Storyboarded {
 
   /// Observation station
   var station: Station!
@@ -34,7 +34,6 @@ extension StationViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell", for: indexPath)
 
     let parameter = station.parameters[indexPath.row]
-
     cell.textLabel?.text = parameter.name
     cell.detailTextLabel?.text = parameter.value
     

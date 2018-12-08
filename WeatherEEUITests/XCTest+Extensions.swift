@@ -18,3 +18,9 @@ extension XCTestCase {
     return result == .completed
   }
 }
+
+extension XCUIElement {
+  func searchCell(_ value: String) -> XCUIElement {
+    return cells.staticTexts[value]
+  }
+}
