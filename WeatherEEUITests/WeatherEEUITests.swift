@@ -71,7 +71,7 @@ class WeatherEEUITests: XCTestCase {
     
     takeScreenShot("Ruhnu_station", counter: 3)
     
-    let backButton = navigationBar.buttons["Observation"]
+    let backButton = navigationBar.buttons["Observations"]
     backButton.tap()
   }
   

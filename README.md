@@ -4,6 +4,6 @@
 
 App Store link: https://itunes.apple.com/lv/app/weather-estonia/id1363556262?mt=8
 
-![Main screen]()
-![Clicked station]()
-![Ruhnu]()
+![Main screen](screenshots/main-screen.png)
+![Tapped station](screenshots/tapped-station.png)
+![Ruhnu](screenshots/ruhnu-station.png)
