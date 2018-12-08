@@ -10,26 +10,23 @@ import XCTest
 
 class WeatherEEUITests: XCTestCase {
   
-  /// Screenshot counter
-  var counter = 0
-  
   let observationName = "Ruhnu"
   
-  let app = XCUIApplication()
+  private var app: XCUIApplication!
   
   override func setUp() {
     super.setUp()
     
+    app = XCUIApplication()
     setupSnapshot(app)
-    app.launch()
     
     continueAfterFailure = false
   }
   
   func testAppRun() {
-    sleep(5)
+    app.launch()
     
-    takeScreenShot("MainScreen")
+    takeScreenShot("MainScreen", counter: 1)
     
     let predicate = NSPredicate(format: "label BEGINSWITH '\(observationName)'")
     let annotation = app.otherElements.matching(predicate).element(boundBy: 0)
@@ -38,44 +35,53 @@ class WeatherEEUITests: XCTestCase {
     
     annotation.tap()
     
-    let moreInfoButton = app.buttons["More Info"]
-    XCTAssertTrue(waitForElementToAppear(moreInfoButton))
-    
-    takeScreenShot("Tap_Observation")
-    
-    moreInfoButton.tap()
-    
-    let navigationBar = app.navigationBars[observationName]
-    XCTAssertTrue(waitForElementToAppear(navigationBar))
-    
-    takeScreenShot("Observation_Data")
- 
-    let parametersTable = app.tables.firstMatch
-    let temperatureCell = parametersTable.cells.staticTexts["Air temperature (°C)"]
-    let windSpeedCell = parametersTable.cells.staticTexts["Wind speed (m/s)"]
-    let windDirectionCell = parametersTable.cells.staticTexts["Wind direction"]
-    
-    XCTAssertTrue(waitForElementToAppear(temperatureCell))
-    XCTAssertTrue(waitForElementToAppear(windSpeedCell))
-    XCTAssertTrue(waitForElementToAppear(windDirectionCell))
-    
-    let backButton = navigationBar.buttons["Observations"].firstMatch
-    backButton.tap()
-    
-    let observationsNavigationbar = app.navigationBars["Observations"].firstMatch
-    XCTAssertTrue(waitForElementToAppear(observationsNavigationbar))
-    
-    let refreshButton = observationsNavigationbar.buttons["Refresh"]
-    XCTAssertTrue(waitForElementToAppear(refreshButton))
-    
-    refreshButton.tap()
-    
-    sleep(3)
+    takeScreenShot("Tapped_Observation_Station", counter: 2)
   }
   
-  private func takeScreenShot(_ name: String) {
+  func testObservationStation() {
+    
+    app.launchArguments.append("-launchObservationStation")
+    app.launch()
+    
+    let navigationBar = app.navigationBars["Ruhnu"]
+    XCTAssertTrue(waitForElementToAppear(navigationBar))
+    
+    let table = app.tables.firstMatch
+    
+    waitForElementToAppear(table.searchCell("Air temperature (°C)"))
+    waitForElementToAppear(table.searchCell("5.2"))
+    
+    waitForElementToAppear(table.searchCell("Wind speed (m/s)"))
+    waitForElementToAppear(table.searchCell("7.2"))
+    
+    waitForElementToAppear(table.searchCell("Wind direction"))
+    waitForElementToAppear(table.searchCell("SSW"))
+    
+    waitForElementToAppear(table.searchCell("Air pressure"))
+    waitForElementToAppear(table.searchCell("992.4"))
+    
+    waitForElementToAppear(table.searchCell("Precipitations"))
+    waitForElementToAppear(table.searchCell("0"))
+    
+    waitForElementToAppear(table.searchCell("Visibility"))
+    waitForElementToAppear(table.searchCell("12.0"))
+    
+    waitForElementToAppear(table.searchCell("Relative humidity"))
+    waitForElementToAppear(table.searchCell("93"))
+    
+    takeScreenShot("Ruhnu_station", counter: 3)
+    
+    let backButton = navigationBar.buttons["Observations"]
+    backButton.tap()
+  }
+  
+  private func takeScreenShot(_ name: String, counter: Int) {
     snapshot("\(String(format: "%02d", counter))_\(name)")
-    counter += 1
+  }
+  
+  private func launchApp() {
+    sleep(5)
+    app.launch()
   }
   
 }

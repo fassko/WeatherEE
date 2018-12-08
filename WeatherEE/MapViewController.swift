@@ -9,26 +9,30 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, Storyboarded {
   
   @IBOutlet weak var mapView: MKMapView!
 
   let weatherService = WeatherService()
   
+  weak var coordinator: MainCoordinator?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     let centerCoordinate = CLLocationCoordinate2D(latitude: 58.5953, longitude: 25.0136)
-    let region = MKCoordinateRegionMakeWithDistance(centerCoordinate, 200000, 500000)
+    let region = MKCoordinateRegion(center: centerCoordinate, latitudinalMeters: 200000, longitudinalMeters: 500000)
     mapView.setRegion(region, animated: false)
     
     loadObservations()
+    
+    uiTest()
   }
   
   /**
    Load observations
    */
-  fileprivate func loadObservations() {
+  private func loadObservations() {
     weatherService.getStationsData { result in
       switch result {
       case let .success(stations):
@@ -50,13 +54,6 @@ class MapViewController: UIViewController {
       case let .failure(error):
         print(error)
       }
-    }
-  }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "station", let station = sender as? Station,
-      let stationViewController = segue.destination as? StationViewController {
-      stationViewController.station = station
     }
   }
   
@@ -92,9 +89,34 @@ extension MapViewController: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                calloutAccessoryControlTapped control: UIControl) {
     
-    if let station = view.annotation as? StationAnnotation {
-      performSegue(withIdentifier: "station", sender: station.station)
-      mapView.deselectAnnotation(view.annotation, animated: true)
+    if let annotation = view.annotation as? StationAnnotation {
+      coordinator?.showObservationStation(annotation.station)
+    }
+    
+    mapView.deselectAnnotation(view.annotation, animated: true)
+  }
+}
+
+extension MapViewController {
+  func uiTest() {
+    if CommandLine.arguments.contains("-launchObservationStation") {
+      let station = Station(name: "Ruhnu",
+                            wmocode: "26227",
+                            longitude: 23.258883333206178,
+                            latitude: 57.783394444110783,
+                            phenomenon: nil,
+                            visibility: "12.0",
+                            precipitations: "0",
+                            airpressure: "992.4",
+                            relativehumidity: "93",
+                            airtemperature: "5.2",
+                            winddirection: "210",
+                            windspeed: "7.2",
+                            windspeedmax: "10.5",
+                            waterlevel: "17",
+                            watertemperature: "4.9",
+                            uvindex: nil)
+      coordinator?.showObservationStation(station)
     }
   }
 }

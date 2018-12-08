@@ -9,8 +9,8 @@ languages([
   "en-US"
 ])
 
-scheme("WeatherEE")
+scheme "WeatherEE"
 
-clear_previous_screenshots(true)
+clear_previous_screenshots true
 
 workspace "./WeatherEE.xcworkspace"

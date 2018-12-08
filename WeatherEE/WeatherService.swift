@@ -23,13 +23,13 @@ struct WeatherService {
           
           let xml = SWXMLHash.lazy(data)
           
-          let stations: [Station] = try xml["observations"]["station"].value().filter({
+          let stations: [Station] = try xml["observations"]["station"].value().filter {
             guard let temperature = $0.airtemperature else {
               return false
             }
             
             return !temperature.isEmpty
-          })
+          }
           
           completion(.success(stations))
         }

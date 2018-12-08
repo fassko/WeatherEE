@@ -1,9 +1,9 @@
 PODS:
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
-  - Fabric (1.7.5)
-  - SwiftLint (0.25.0)
-  - SWXMLHash (4.6.0)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
+  - SwiftLint (0.29.1)
+  - SWXMLHash (4.7.5)
 
 DEPENDENCIES:
   - Crashlytics
@@ -11,12 +11,19 @@ DEPENDENCIES:
   - SwiftLint
   - SWXMLHash
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+    - SwiftLint
+    - SWXMLHash
+
 SPEC CHECKSUMS:
-  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
-  Fabric: ae7146a5f505ea370a1e44820b4b1dc8890e2890
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
-  SWXMLHash: 3c39a53723202800e9e1a87f14b2fe7ac1da98ec
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
+  SWXMLHash: 9d29f0d9f83ad07851572421cd55a5971c368e7f
 
 PODFILE CHECKSUM: 0e690e62e200482ba464a011d9be30f2c69f39fb
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0.beta.2
