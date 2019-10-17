@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		261B5C47668CA9FFC0A714C5 /* Pods_WeatherEE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41EEF18EFF39B991898F48F /* Pods_WeatherEE.framework */; };
 		631E463321BC22B5000CC546 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E463021BC22B4000CC546 /* Coordinator.swift */; };
 		633168D02066CEBC004A622E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168CF2066CEBC004A622E /* Result.swift */; };
 		633168D22066CFDB004A622E /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633168D12066CFDB004A622E /* StationAnnotation.swift */; };
@@ -23,6 +22,7 @@
 		63392E632066BD530000E1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63392E612066BD530000E1E0 /* LaunchScreen.storyboard */; };
 		63392E6B2066BF5A0000E1E0 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6A2066BF5A0000E1E0 /* Station.swift */; };
 		63392E6D2066C13F0000E1E0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63392E6C2066C13F0000E1E0 /* WeatherService.swift */; };
+		638D49C52358C2ED00521B98 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 638D49C42358C2ED00521B98 /* SWXMLHash */; };
 		63958BBA20680EF70005266E /* WeatherEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB920680EF70005266E /* WeatherEEUITests.swift */; };
 		63958BBB20680F090005266E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63958BB72068028A0005266E /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23B95A18EBD27BFF266BB6ED /* Pods-WeatherEE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherEE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherEE/Pods-WeatherEE.debug.xcconfig"; sourceTree = "<group>"; };
 		631E463021BC22B4000CC546 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		633168CF2066CEBC004A622E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		633168D12066CFDB004A622E /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
@@ -60,8 +59,6 @@
 		63392E6C2066C13F0000E1E0 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		63958BB72068028A0005266E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		63958BB920680EF70005266E /* WeatherEEUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherEEUITests.swift; sourceTree = "<group>"; };
-		682C4C04A095D0F0AACDBDFC /* Pods-WeatherEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherEE/Pods-WeatherEE.release.xcconfig"; sourceTree = "<group>"; };
-		D41EEF18EFF39B991898F48F /* Pods_WeatherEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,21 +73,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261B5C47668CA9FFC0A714C5 /* Pods_WeatherEE.framework in Frameworks */,
+				638D49C52358C2ED00521B98 /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		568336762FFF3EEB0EEE6635 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D41EEF18EFF39B991898F48F /* Pods_WeatherEE.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		631E462F21BC22A0000CC546 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +108,6 @@
 				63392E572066BD530000E1E0 /* WeatherEE */,
 				633168DC2067EAEA004A622E /* WeatherEEUITests */,
 				63392E562066BD530000E1E0 /* Products */,
-				B1FF7DD2E9C98D0F9BCB26DB /* Pods */,
-				568336762FFF3EEB0EEE6635 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,15 +139,6 @@
 			path = WeatherEE;
 			sourceTree = "<group>";
 		};
-		B1FF7DD2E9C98D0F9BCB26DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				23B95A18EBD27BFF266BB6ED /* Pods-WeatherEE.debug.xcconfig */,
-				682C4C04A095D0F0AACDBDFC /* Pods-WeatherEE.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,19 +164,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63392E672066BD530000E1E0 /* Build configuration list for PBXNativeTarget "WeatherEE" */;
 			buildPhases = (
-				21F6FFC173103A9B7FD0A46C /* [CP] Check Pods Manifest.lock */,
 				63392E512066BD530000E1E0 /* Sources */,
 				63392E522066BD530000E1E0 /* Frameworks */,
 				63392E532066BD530000E1E0 /* Resources */,
-				B526D34166275A0E276BA1C6 /* [CP] Embed Pods Frameworks */,
 				633168EA2067FFDD004A622E /* Swiftlint */,
-				63958BB4206800630005266E /* Fabric */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WeatherEE;
+			packageProductDependencies = (
+				638D49C42358C2ED00521B98 /* SWXMLHash */,
+			);
 			productName = WeatherEE;
 			productReference = 63392E552066BD530000E1E0 /* WeatherEE.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 63392E4C2066BD520000E1E0;
+			packageReferences = (
+				638D49C32358C2ED00521B98 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			productRefGroup = 63392E562066BD530000E1E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,24 +245,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		21F6FFC173103A9B7FD0A46C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WeatherEE-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		633168EA2067FFDD004A622E /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,39 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		63958BB4206800630005266E /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 34be06edc6f733a743335744b07a23f6a3e5b344 a9207ff06b3417aa4bf8c6408432761ca87c5b52dca8f2365b133eea61d407cc";
-		};
-		B526D34166275A0E276BA1C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WeatherEE/Pods-WeatherEE-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeatherEE/Pods-WeatherEE-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "if which \"swiftlint\" >/dev/null; then\n    \"swiftlint\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -396,11 +327,15 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEEUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WeatherEE;
 			};
@@ -413,11 +348,15 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEEUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WeatherEE;
 			};
@@ -481,6 +420,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -533,14 +473,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		63392E682066BD530000E1E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B95A18EBD27BFF266BB6ED /* Pods-WeatherEE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -550,12 +491,15 @@
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEE/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f978b44e-a28d-4a4c-a2d6-02e10b0a6015";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.fassko.WeatherEE";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -563,7 +507,6 @@
 		};
 		63392E692066BD530000E1E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 682C4C04A095D0F0AACDBDFC /* Pods-WeatherEE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -573,12 +516,15 @@
 				DEVELOPMENT_TEAM = 3SGNZQGS68;
 				INFOPLIST_FILE = WeatherEE/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.WeatherEE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f887777d-572f-4a3a-b1cd-dba5a66d6fd2";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.fassko.WeatherEE";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -615,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		638D49C32358C2ED00521B98 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		638D49C42358C2ED00521B98 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 638D49C32358C2ED00521B98 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63392E4D2066BD520000E1E0 /* Project object */;
 }

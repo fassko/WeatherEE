@@ -26,26 +26,11 @@ Certs
 fastlane ios generate_icon
 ```
 
-### ios ci_build
-```
-fastlane ios ci_build
-```
-CI build
 ### ios test
 ```
 fastlane ios test
 ```
 UI tests
-### ios circleci
-```
-fastlane ios circleci
-```
-Circle CI lane
-### ios travis
-```
-fastlane ios travis
-```
-Travis lane
 ### ios build
 ```
 fastlane ios build
